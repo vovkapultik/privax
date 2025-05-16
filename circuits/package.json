@@ -1,0 +1,37 @@
+{
+  "name": "zk-commitment-protocol",
+  "version": "1.0.0",
+  "description": "Zero-knowledge protocol for anonymous deposits and withdrawals",
+  "main": "index.js",
+  "scripts": {
+    "compile": "bash ./scripts/compile.sh main",
+    "ptau:fetch": "bash ./scripts/ptau_fetch.sh 14",
+    "ptau:phase2": "bash ./scripts/ptau_phase2.sh build/ptau/powers_of_tau_14.ptau main",
+    "witness:generate": "bash ./scripts/witness.sh main",
+    "proof:generate": "bash ./scripts/proof_generate.sh main",
+    "build": "yarn compile && yarn ptau:fetch && yarn ptau:phase2 && yarn witness:generate && yarn proof:generate",
+    "test": "mocha --project tsconfig.json"
+  },
+  "keywords": [
+    "zero-knowledge",
+    "zk-snarks",
+    "circom",
+    "privacy"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "circomlib": "^2.0.5",
+    "snarkjs": "^0.7.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.7",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.4.5",
+    "chai": "^4.3.7",
+    "circom_tester": "^0.0.19",
+    "mocha": "^10.2.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  }
+} 

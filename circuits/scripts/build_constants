@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Paths for build artifacts
+BINARIES_FOLDER_PATH="./build/binaries/"
+PTAU_FOLDER_PATH="./build/ptau/"
+KEYS_FOLDER_PATH="./build/keys/"
+PROOFS_FOLDER_PATH="./build/proofs/"
+INPUTS_FOLDER_PATH="./inputs/" 

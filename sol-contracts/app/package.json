@@ -1,0 +1,25 @@
+{
+  "name": "privax-protocol-client",
+  "version": "0.1.0",
+  "description": "Client application for interacting with Privax Protocol",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node src/index.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.28.0",
+    "@solana/spl-token": "^0.3.8",
+    "@solana/web3.js": "^1.78.4",
+    "bn.js": "^5.2.1",
+    "dotenv": "^16.3.1",
+    "fixed-merkle-tree": "^0.7.3"
+  },
+  "devDependencies": {
+    "@types/bn.js": "^5.1.1",
+    "@types/node": "^20.4.9",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  }
+} 

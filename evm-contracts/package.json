@@ -1,0 +1,45 @@
+{
+  "name": "privax-protocol",
+  "version": "1.0.0",
+  "description": "A privacy-preserving protocol for the Privax platform, utilizing ZK-SNARKs for secure and private token transfers on Ethereum",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "hardhat test",
+    "compile": "hardhat compile",
+    "clean": "hardhat clean",
+    "node": "hardhat node",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:testnet": "hardhat run scripts/deploy.js --network sepolia",
+    "lint": "solhint 'contracts/**/*.sol'",
+    "coverage": "hardhat coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Privax-Hackathon/evm-contracts.git"
+  },
+  "keywords": [
+    "privax",
+    "privacy",
+    "ethereum",
+    "zk-snarks",
+    "token",
+    "erc20"
+  ],
+  "author": "Privax Hackathon Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Privax-Hackathon/evm-contracts/issues"
+  },
+  "homepage": "https://github.com/Privax-Hackathon/evm-contracts#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "dotenv": "^16.5.0",
+    "hardhat": "^2.24.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.3"
+  }
+}

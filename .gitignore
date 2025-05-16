@@ -1,0 +1,123 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+package-lock.json
+yarn.lock
+.node_repl_history
+.eslintcache
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+.nyc_output/
+
+# Solana
+.anchor/
+target/
+**/*.rs.bk
+test-ledger/
+
+# Ethereum/Hardhat
+coverage/
+coverage.json
+typechain/
+typechain-types/
+artifacts/
+cache/
+deployments/
+out/
+
+# ZK Circuits
+*.r1cs
+*.sym
+*.wasm
+*.wtns
+*.zkey
+*.ptau
+verification_key.json
+witness.wtns
+proof.json
+public.json
+verifier.sol
+
+# TypeScript
+dist/
+build/
+*.tsbuildinfo
+
+# IDE and editors
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+*.swp
+*.swo
+*~
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs/
+*.log
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary/backup files
+*~
+*.bak
+*.tmp
+*.temp
+*trash*
+*junk*
+*old*
+*backup*
+*.backup
+temp/
+tmp/
+
+# Explicitly include project directories
+!sol-contracts/
+!evm-contracts/
+!circuits/
+!api/
+!relayer/ 
